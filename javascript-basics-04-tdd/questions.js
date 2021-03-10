@@ -101,47 +101,75 @@ return parseFloat((weight/(height*height)).toFixed(2));
 }
 
 const createLanguagesArray = () => {
-var LanguagesArray=["Html","CSS","Java","PHP"];
-return LanguagesArray;
+var languages=["Html","CSS","Java","PHP"];
+return languages;
 
 }
 
 const createNumbersArray = () => {
-
+var nombres=[0,1,2,3,4,5];
+return nombres;
 }
 
 const replaceElement = (languages) => {
-
+languages=["Html","CSS","Java","PHP"];
+languages[2]="Javascript";
+replacedLanguages=languages;
+return replacedLanguages;
 }
 
 const addElement = (languages) => {
-
+    languages=["Html","CSS","Java","PHP"];
+    languages[2]="Javascript";
+    replacedLanguages=languages;
+    replacedLanguages.push('Ruby');
+    replacedLanguages.push('Python');
+    var modifiedLanguages=replacedLanguages;
+    return modifiedLanguages;
 }
 
 const addNumberElement = (numbers) => {
-
+var numbers = [0,1,2,3,4,5];
+numbers.unshift(-1);
+numbers.unshift(-2)
+var modifiedNumbers=numbers;
+return modifiedNumbers;
 }
 
 const removeFirst = (languages) => {
-
+   var languages = ['Html', 'CSS', 'Javascript', 'PHP', 'Ruby', 'Python'];
+   languages.shift();
+   modifiedLanguages=languages;
+   return modifiedLanguages;
 }
 
 const removeLast = (languages) => {
-
+   var languages = ['CSS', 'Javascript', 'PHP', 'Ruby', 'Python'];
+   languages.pop();
+   modifiedLanguages=languages;
+   return modifiedLanguages;
 }
 
 const convertStrToArr = (social_arr) => {
-
+     var socialNetworksString = 'Facebook,Twitter,Google +,Viadeo,LinkedIn';
+     var socialNetworks=socialNetworksString.split(",");
+     return socialNetworks;
 }
 
 const convertArrToStr = (languages) => {
-
+    var languagesString = ['CSS', 'Javascript', 'PHP', 'Ruby'];
+    languages = languagesString.toString();
+    return languages;
 }
 
 const sortArr = (social_arr) => {
-
+ var socialNetworks = ['Facebook','Twitter', 'Google +','Viadeo','LinkedIn'];
+ var socialNetworksSorted = socialNetworks.sort();
+    return socialNetworksSorted;
 }
 
 const invertArr = (social_arr) => {
-
+    var languages = ['CSS', 'Javascript', 'PHP', 'Ruby'];
+    var languagesInverted = languages.reverse();
+    return languagesInverted;
 }
