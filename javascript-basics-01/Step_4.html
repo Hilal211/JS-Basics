@@ -11,5 +11,16 @@
             <label for="city">city : </label><input type="text" name="city" id="city"/>
             <button  name="validate" id="validate">Validate</button>
         </form>
+        <script>
+            document.getElementById("validate").addEventListener("click",display);
+            function display(){
+                var name=document.getElementById("name").value;
+                var surname=document.getElementById("surname").value;
+                var city=document.getElementById("city").value;
+                if(name!=null && surname!=null && city!=null){
+                    alert("Nom: "+name+"\n"+"surname: "+surname+"\n"+"city: "+city);
+                }
+            }
+        </script>
     </body>
 </html>
